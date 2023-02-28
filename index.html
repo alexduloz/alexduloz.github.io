@@ -1,7 +1,391 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+	<link rel="stylesheet" href="https://use.typekit.net/obk2mau.css?v2">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alex Duloz</title>
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- HTML Meta Tags -->
+    <meta name="description" content="Artist">
+    <meta name="author" content="Alex Duloz">
+	
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://alexduloz.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="alexduloz">
+	<meta property="og:description" content="Artist">
+	<meta property="og:image" content="https://alexduloz.com/front/img/featured/featured.jpg">
+	
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="alexduloz.com">
+	<meta property="twitter:url" content="https://alexduloz.com">
+	<meta name="twitter:title" content="Alex Duloz">
+	<meta name="twitter:description" content="Artist">
+	<meta name="twitter:image" content="https://alexduloz.com/front/img/featured/featured.jpg">
+
+	<script src="https://www.alexduloz.me/front/js/app.js?v2"></script>
+    <link href="https://www.alexduloz.me/front/css/normalize.min.css" rel="stylesheet">
+    <link href="https://www.alexduloz.me/front/css/main.css?v2" rel="stylesheet">
+    
+
+  </head>
+
+  <body><style>
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+	display:block;
+	position:relative;
+	width: 100%;
+	max-width: 630px;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: -10px;
+}
+
+.img-wrapper {
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.mediabox a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+.mediabox {
+		position: relative;
+		display: block;
+		height: 0;
+		width: 100%;
+		/*padding-bottom: 66.6667%;*/
+	}
+
+	.mediabox-img.ls-blur-up-is-loading,
+	.mediabox-img.lazyload:not([src]) {
+		visibility: hidden;
+	}
+
+	.ls-blur-up-img,
+	.mediabox-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 200px;
+		height: 200px;
+		display: block;
+
+		/* only if you want to change the blur-up option from always to auto or want to use blur up effect without a lowsrc image. */
+		font-family: "blur-up: auto", "object-fit: cover";
+
+		object-fit: cover;
+	}
+
+	.ls-blur-up-img {
+		filter: blur(10px);
+		opacity: 1;
+		transition: opacity 1000ms, filter 1500ms;
+	}
+
+	.ls-blur-up-img.ls-inview.ls-original-loaded {
+		opacity: 0;
+		filter: blur(5px);
+	}
+
+</style>
+
+<div id="loading"  style="display:none">
+	<div class="container">
+		<p style="text-align:center; margin-top: 100px;">
+			<img style="border-radius:50%" src="https://www.alexduloz.me/front/img/featured/featured.png" />
+		</p>
+	</div>
+</div>
+
+<div id="loaded">
+	
+	<div style="margin-top:30px" class="center">
+		<p>Hey! I'm Alex Duloz. I'm a music producer + visual artist.</p>
+		<p>You can find me on <a href="https://instagram.com/alexduloz">Instagram</a>.</p>
+		<p>I make <a href="https://instagram.com/panaviscope">Panaviscope</a>.</p>
+	</div>
+
+
+	<p style="text-align:center; margin-top: 30px;">
+		<img class="responsive" src="https://www.alexduloz.me/front/img/featured/alex.jpg" />
+	</p>
+
+	<p style="text-align:center; margin-top: 30px;">
+		<img style="border-radius:50%" src="https://www.alexduloz.me/front/img/featured/featured.png" />
+	</p>
+
+	<!--
+	<p style="margin-top:15px" class="center">
+		If you want to feature my drawings on your account, grab them (high res) from here and tag me <a href="https://instagram.com/alexduloz">@alexduloz</a>.
+	</p>
+
+		<div class="img-container">
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/talking-to-skull-fev-5-2022.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/talking-to-skull-fev-5-2022.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/talking-to-skull-fev-5-2022.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/talking-to-skull-fev-3-2022.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/talking-to-skull-fev-3-2022.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/talking-to-skull-fev-3-2022.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/talking-to-skull-jan-28-2022.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/talking-to-skull-jan-28-2022.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/talking-to-skull-jan-28-2022.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/skull-jan-28-2022.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/skull-jan-28-2022.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/skull-jan-28-2022.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/skull-jan-27-2022.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/skull-jan-27-2022.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/skull-jan-27-2022.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/skull-jan-25-2022.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/skull-jan-25-2022.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/skull-jan-25-2022.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/lobster-3.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/lobster-3.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/lobster-3.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/lobster-2.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/lobster-2.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/lobster-2.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/lobster-1.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/lobster-1.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/lobster-1.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/bearish-3.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/bearish-3.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/bearish-3.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/bearish-2.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/bearish-2.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/bearish-2.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/bearish-1.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/bearish-1.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/bearish-1.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/2021-wasnt-such-a-bad-year-3.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/2021-wasnt-such-a-bad-year-3.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/2021-wasnt-such-a-bad-year-3.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/2021-wasnt-such-a-bad-year-2.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/2021-wasnt-such-a-bad-year-2.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/2021-wasnt-such-a-bad-year-2.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+				<div class="img-wrapper">
+			<a href="https://www.alexduloz.me/front/img/2021-wasnt-such-a-bad-year-1.jpg" target="_blank">
+			<div class="mediabox">
+				
+				<img
+					class="mediabox-img lazyload"
+					data-src="https://www.alexduloz.me/front/img/2021-wasnt-such-a-bad-year-1.jpg"
+					data-lowsrc="https://www.alexduloz.me/front/img/lowsrc/2021-wasnt-such-a-bad-year-1.png"
+					data-sizes="auto"
+				/>
+				
+			</div>
+			</a>
+		</div>
+			<div>
+	-->
+
+</div><!-- end #loaded -->
+
+<script>
+
+(function() {
+	function init() {
+		if (typeof app === "undefined") {
+			setTimeout(function() {
+				init();
+			}, 50);
+			return false;
+		}
+		//launch app
+		app();
+	}
+	init();
+})();
+
+</script>
+
 </body>
 </html>
