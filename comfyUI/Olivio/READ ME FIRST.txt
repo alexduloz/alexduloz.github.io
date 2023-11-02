@@ -1,0 +1,19 @@
+Please Watch my Youtube Tutorial here:
+https://youtu.be/9UOdXLYwhYY
+
+If you use ComfyUI, please install the ComfyUI Manager and click on "Missing Nodes" to install the Nodes you miss for my builds. Please Restart ComfyUI after that. If it does not work at that time, open the Manager again and click on "updated all" to update ComfyUI and all nodes.
+
+ComfyUI:
+https://github.com/comfyanonymous/ComfyUI
+
+ComfyUI Manager: 
+https://github.com/ltdrdata/ComfyUI-Manager
+
+Epicrealism  Model:
+https://civitai.com/models/25694/epicrealism
+
+Upscalers: i use 8x_NMKD-Superscale_150000_G.pth
+https://huggingface.co/uwg/upscaler/tree/main/ESRGAN
+
+VAE ft-mse-840000:
+https://huggingface.co/stabilityai/sd-vae-ft-mse-original/blob/main/vae-ft-mse-840000-ema-pruned.ckpt
